@@ -1,6 +1,20 @@
+[workspace]
+members = [".",
+            "rtm-attributes",
+            "rtm-cli",
+            "rtm-csv",
+            "rtm-devtools",
+            "rtm-examples",
+            "rtm-json",
+            "rtm-macros",
+            "rtm-schema",
+            "rtm-sql",
+            "rtm-tests",
+            "rtm-yaml", ]
+
 [package]
 name = "rtm"
-version = "0.0.2"
+version = "0.0.3"
 rust-version = "1.56.0"
 edition = "2021"
 authors = ["Begley Brothers Inc. <begleybrothers@gmail.com>"]
@@ -10,12 +24,10 @@ repository = "https://github.com/rtm-rs/rtm"
 homepage = "https://rtm-rs.org"
 documentation = "https://docs.rs/rtm"
 description = """
-Rust Type Mapper (RTM) crate rtm.
+Rust Type Mapper (RTM) crate rtm-rs.
 """
 categories = [
     "database",
-    "development-tools::profiling",
-    "asynchronous",
 ]
 keywords = ["async", "orm", "cqrs", "http", "sql"]
 autoexamples = false
@@ -48,4 +60,3 @@ lto = true
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
-
